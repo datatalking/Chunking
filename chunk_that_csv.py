@@ -6,7 +6,6 @@ import bandit
 import pandas as pd
 import numpy
 
-voters_street1 = pd.read
 
 def main():
 	print(pd)
@@ -15,7 +14,7 @@ def main():
 
 
 def get_whole_file():
-	voters_street = pd.read.csv(
+	voters_street = pd.read_csv(
 		"voters.csv")["County"]
 	print(voters_street.value_counts())
 
@@ -29,7 +28,6 @@ def get_voters_on_street(name):
 
 if __name__ == '__main__':
 	main()
-	print(pd)
     #function_a()
     #function_b()
 #print("after __name__ guard")
