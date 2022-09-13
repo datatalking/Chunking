@@ -41,7 +41,7 @@ def get_data_profile(filename):
 def get_voters_on_street(name):
 	return pd.concat(
 		df[df["county"] == name] for df in
-		pd.read.csv("voters.csv", chunksize = 1000))
+		pd.read.csv("voters.csv", chunksize=1000))
 
 
 if __name__ == '__main__':
@@ -50,6 +50,6 @@ if __name__ == '__main__':
 	dotenv_path = Path(PATH_TO_ENV)
 	load_dotenv(dotenv_path=dotenv_path)
 	main()
-    #function_a()
-    #function_b()
+    # function_a()
+    # function_b()
 #print("after __name__ guard")
